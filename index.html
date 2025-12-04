@@ -19,6 +19,14 @@
             text-align: center;
         }
 
+        header img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
         header h1 {
             margin: 0;
             font-size: 42px;
@@ -39,4 +47,103 @@
         h2 {
             font-size: 30px;
             margin-bottom: 10px;
-            border-left: 5px
+            border-left: 5px solid #111;
+            padding-left: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-box {
+            background: #f7f7f7;
+            padding: 20px;
+            border-left: 5px solid #111;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebd5a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="PHOTO1_URL_HERE">
+        <h1>Level Up with Priman</h1>
+        <p>Personal Training • Competition Prep • Diet Coaching</p>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            My name is <strong>Priman</strong>, and I am a dedicated personal trainer committed to helping people 
+            transform their bodies, build confidence, and achieve real results.
+        </p>
+        <p>
+            Email: <strong>primananton@gmail.com</strong><br>
+            Phone / WhatsApp: <strong>076 600 0329</strong>
+        </p>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="PHOTO1_URL_HERE">
+            <img src="PHOTO2_URL_HERE">
+            <img src="PHOTO3_URL_HERE">
+            <img src="PHOTO4_URL_HERE">
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+        <h2>Services</h2>
+
+        <div class="service-box">
+            <h3>Personal Training</h3>
+            <p>Custom sessions designed for your goals, fitness level, and body type.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Competition Preparation</h3>
+            <p>Full coaching for physique & bodybuilding competition prep.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Diet Plan Coaching</h3>
+            <p>Meal plans designed to maximise fat loss
