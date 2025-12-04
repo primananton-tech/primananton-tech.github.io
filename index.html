@@ -1,71 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level Up with Priman</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #ffffff;
-            color: #222;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Level Up with Priman — Priman</title>
+  <style>
+    :root{
+      --dark:#111;
+      --accent:#e6b000;
+      --muted:#666;
+      --bg:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#222;line-height:1.5}
+    header{background:var(--dark);color:#fff;padding:44px 18px;text-align:center}
+    header h1{margin:0;font-size:34px;letter-spacing:1px}
+    header p{margin:8px 0 0;font-size:15px;color:#ddd}
+    main{max-width:1000px;margin:28px auto;padding:0 18px}
+    section{margin-bottom:28px}
+    h2{font-size:22px;margin:0 0 10px 0;color:var(--dark);padding-left:8px;border-left:4px solid var(--dark)}
+    .lead{color:var(--muted);margin-bottom:12px}
+    .profile{display:block;margin:18px auto 6px auto;max-width:360px;width:100%;border-radius:10px;object-fit:cover}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
+    .service{background:#f7f7f7;padding:14px;border-radius:8px}
+    .service h3{margin:0 0 8px 0;font-size:16px}
+    /* Gallery grid */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px;display:block}
+    /* Contact */
+    .contact p{margin:6px 0;color:#111}
+    a.button{display:inline-block;padding:10px 16px;background:var(--dark);color:#fff;border-radius:8px;text-decoration:none;margin-top:8px}
+    footer{text-align:center;padding:20px 0;color:#777;background:#fafafa;margin-top:30px}
+    .whatsapp-float{position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    /* Responsive */
+    @media (max-width:880px){
+      .services{grid-template-columns:1fr; }
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .gallery img{height:180px}
+    }
+    @media (max-width:420px){
+      header h1{font-size:28px}
+      .gallery img{height:140px}
+    }
+  </style>
+</head>
+<body>
 
-        header {
-            background: #111;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+  <header>
+    <h1>Level Up with Priman</h1>
+    <p>Personal Training • Competition Prep • Diet Coaching</p>
+  </header>
 
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-            letter-spacing: 2px;
-        }
+  <main>
+    <!-- Profile image -->
+    <img class="profile" src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/IMG_2204.JPG" alt="Priman profile photo" loading="lazy">
 
-        header p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="lead">
+        My name is <strong>Priman</strong>. I’m a dedicated personal trainer focused on helping clients transform their bodies,
+        prepare for competitions, and build sustainable, healthy habits. I provide personalised workout plans, competition coaching,
+        and structured diet guidance so you get real, long-term results.
+      </p>
+      <p>
+        <strong>Focus:</strong><br>
+        ✔ Improve physical strength · ✔ Build healthier lifestyle · ✔ Competition preparation & stage-ready conditioning
+      </p>
+    </section>
 
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+    <!-- Services -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Personal Training</h3>
+          <div class="lead">One-on-one and online coaching tailored to your goals and experience level.</div>
+        </div>
 
-        h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
-            border-left: 5px solid #111;
-            padding-left: 10px;
-        }
+        <div class="service">
+          <h3>Competition Preparation</h3>
+          <div class="lead">Stage-ready programming, posing practice, peak week & conditioning strategies.</div>
+        </div>
 
-        .service-box {
-            background: #f7f7f7;
-            padding: 20px;
-            border-left: 5px solid #111;
-            margin-bottom: 20px;
-        }
+        <div class="service">
+          <h3>Diet Plan</h3>
+          <div class="lead">Practical meal plans with macro guidance and flexible food options.</div>
+        </div>
+      </div>
+    </section>
 
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p class="lead">Training, progress and competition photos.</p>
+      <div class="gallery">
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/IMG_2204.JPG" alt="Pose 1" loading="lazy">
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/FB_IMG_1571071535691.jpg" alt="Pose 2" loading="lazy">
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/FB_IMG_1580112625830.jpg" alt="Pose 3" loading="lazy">
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/FB_IMG_1734872361193.jpg" alt="Pose 4" loading="lazy">
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/IMG_20250707_080520.JPG" alt="Pose 5" loading="lazy">
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/b18fa348-f582-4385-8ade-facee3cfb4ab.jpg" alt="Pose 6" loading="lazy">
+      </div>
+    </section>
 
-        .profile-img {
-            width: 100%;
-            max-width: 400px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 12px;
-        }
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact"><strong>Phone:</strong> <a href="tel:0766000329">076 600 0329</a></p>
+      <p class="contact"><strong>Email:</strong> <a href="mailto:primananton@gmail.com">primananton@gmail.com</a></p>
+      <p class="contact"><strong>WhatsApp:</strong> <a href="https://wa.me/94766000329" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
+      <p class="lead">Available for online or in-person coaching. Message on WhatsApp or email to book a session.</p>
+      <p><a class="button" href="https://wa.me/94766000329" target="_blank" rel="noopener noreferrer">Book via WhatsApp</a></p>
+    </section>
+  </main>
 
-        .whatsapp-btn {
-            position: fixed;
-            bottom:
+  <footer>
+    <p>© 2025 Level Up with Priman — All Rights Reserved</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/94766000329?text=Hi%20Priman,%20I%20want%20to%20book%20a%20session" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+</body>
+</html>
