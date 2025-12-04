@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Level Up with Priman</title>
+
     <style>
         body {
             margin: 0;
@@ -11,53 +12,37 @@
             background: #ffffff;
             color: #222;
         }
-
         header {
             background: #111;
             color: white;
             padding: 40px 20px;
             text-align: center;
         }
-
         header h1 {
-            margin: 0;
             font-size: 42px;
-            letter-spacing: 2px;
+            margin: 0;
         }
-
-        header p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
         }
-
         h2 {
             font-size: 30px;
-            margin-bottom: 10px;
             border-left: 5px solid #111;
             padding-left: 10px;
         }
-
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
         .gallery img {
             width: 100%;
-            max-width: 400px;
-            margin: 10px auto;
-            display: block;
+            max-width: 260px;
             border-radius: 10px;
         }
-
-        .service-box {
-            background: #f7f7f7;
-            padding: 20px;
-            border-left: 5px solid #111;
-            margin-bottom: 20px;
-        }
-
         footer {
             background: #111;
             color: white;
@@ -65,97 +50,47 @@
             padding: 20px;
             margin-top: 40px;
         }
-
-        .whatsapp-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25d366;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 18px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
-        }
-
-        .whatsapp-btn:hover {
-            background: #1ebd5a;
-        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Level Up with Priman</h1>
-        <p>Personal Training • Competition Prep • Diet Coaching</p>
-    </header>
+<header>
+    <h1>Level Up with Priman</h1>
+    <p>Personal Training • Competition Prep • Diet Coaching</p>
+</header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            My name is <strong>Priman Anton</strong>. I am a dedicated personal trainer and competitive bodybuilder
-            with a passion for helping people transform their bodies and unlock their full potential.
-            With years of training experience, I specialise in:
-        </p>
+<section id="about">
+    <h2>About Me</h2>
+    <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/IMG_2204.JPG" style="width:100%; max-width:400px; display:block; margin:auto; border-radius:10px;" />
 
-        <p>
-            ✔ Muscle building & strength training<br>
-            ✔ Competition preparation & posing<br>
-            ✔ Fat-loss programs<br>
-            ✔ Customised diet plans<br>
-            ✔ Lifestyle transformation coaching
-        </p>
+    <p>
+        My name is <strong>Priman</strong>, and I am a dedicated personal trainer committed to helping people 
+        transform their bodies, build confidence, and achieve real results. I provide personalised workout plans, 
+        competition preparation, and custom diet coaching.
+    </p>
+</section>
 
-        <p>
-            My mission is simple: <strong>to help you become the best version of yourself</strong>—physically,
-            mentally, and confidently. Whether you're a beginner or an advanced athlete, I will guide you every
-            step of the way with personalised support.
-        </p>
-    </section>
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/FB_IMG_1580112625830.jpg" alt="Photo" />
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/IMG_20250707_080520.JPG" alt="Photo" />
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/FB_IMG_1734872361193.jpg" alt="Photo" />
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/b18fa348-f582-4385-8ade-facee3cfb4ab.jpg" alt="Photo" />
+        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/b18fa348-f582-4385-8ade-facee3cfb4ab.jpg" alt="Photo" />
+    </div>
+</section>
 
-    <section class="gallery">
-        <h2>Gallery</h2>
+<section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> 076 600 0329</p>
+    <p>Available for WhatsApp & Calls</p>
+    <a href="https://wa.me/94766000329">Chat on WhatsApp</a>
+</section>
 
-        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/received_416981809033058.jpeg1193.jpg" alt="">
-        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/FB_IMG_1580112625830.jpg" alt="">
-        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/FB_IMG_1734872361193.jpg" alt="">
-        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/IMG_2204.JPG" alt="">
-        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/IMG_20250707_080520.JPG" alt="">
-        <img src="https://raw.githubusercontent.com/primananton-tech/primananton-tech.github.io/main/b18fa348-f582-4385-8ade-facee3cfb4ab.jpg" alt="">
-    </section>
-
-    <section>
-        <h2>Services</h2>
-
-        <div class="service-box">
-            <h3>Personal Training</h3>
-            <p>One-on-one customised training sessions designed to match your goals and body type.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Competition Preparation</h3>
-            <p>Professional coaching for physique and bodybuilding competitions.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Diet Plan</h3>
-            <p>Structured meal plans tailored to your goals.</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p><strong>Phone:</strong> 076 600 0329</p>
-        <p><strong>Email:</strong> primananton@gmail.com</p>
-        <p>Available for WhatsApp, online training & in-person coaching.</p>
-    </section>
-
-    <footer>
-        <p>© 2025 Level Up with Priman — All Rights Reserved</p>
-    </footer>
-
-    <a class="whatsapp-btn" href="https://wa.me/94766000329" target="_blank">WhatsApp Me</a>
+<footer>
+    <p>© 2025 Level Up with Priman — All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
